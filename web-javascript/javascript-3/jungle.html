@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Explore the Jungle Adventure! 🌴</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="heading">Step into the Jungle! 🌿</h1>
+        <p id="description">Hover over the image below to begin your adventure...</p>
+
+        <!-- Default image with mouseover and mouseout event handlers -->
+        <img id="adventureImage" 
+             src="jungle1.jpg" 
+             alt="Jungle Adventure" 
+             onmouseover="exploreJungle()" 
+             onmouseout="returnHome()" />
+
+        <p id="adventureText"></p>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        // Correctly store initial content for reset
+        const initialImage = "jungle1.jpg";  // Original image path
+        const initialHeading = "Step into the Jungle! 🌿";
+        const initialDescription = "Hover over the image below to begin your adventure...";
+
+        // Function to change the image and text on mouseover
+        function exploreJungle() {
+            document.getElementById("adventureImage").src = "jungle2.jpg";
+            document.getElementById("heading").innerHTML = "You Found a Hidden Treasure! 💎";
+            document.getElementById("description").innerHTML = "Keep exploring... There’s more to discover!";
+            document.getElementById("adventureText").innerHTML = "🐾 Beware of wild animals lurking nearby...";
+        }
+
+        // Function to reset content properly on mouseout
+        function returnHome() {
+            document.getElementById("adventureImage").src = initialImage;  // Reset to original image
+            document.getElementById("heading").innerHTML = initialHeading;  // Reset heading
+            document.getElementById("description").innerHTML = initialDescription;  // Reset description
+            document.getElementById("adventureText").innerHTML = "";  // Clear additional text
+        }
+    </script>
+
+</body>
+</html>

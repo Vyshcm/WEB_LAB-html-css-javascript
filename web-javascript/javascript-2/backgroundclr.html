@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Splash - Change the Mood!</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Feeling Bored? Let's Add Some Colors! 🎨</h1>
+        <p>Click the button below to give your screen a fresh look!</p>
+        <button onclick="changeColor()">Change the Mood</button>
+    </div>
+
+    <script>
+        // Array of cool background colors
+        const colors = ["#FF5733", "#33FF57", "#5733FF", "#FFC300", "#C70039", "#900C3F", "#DAF7A6", "#5D6D7E", "#16A085", "#F39C12"];
+        
+        // Initial color index
+        let index = 0;
+
+        // Function to change background color
+        function changeColor() {
+            document.body.style.backgroundColor = colors[index];
+            index = (index + 1) % colors.length;  // Loop back to start after last color
+        }
+    </script>
+
+</body>
+</html>

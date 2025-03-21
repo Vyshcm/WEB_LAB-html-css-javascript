@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matrix Symmetry Checker</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Matrix Symmetry Checker</h2>
+        <p>Enter matrix values row-wise, separated by commas.</p>
+        
+        <!-- Input field to accept matrix values -->
+        <label for="matrixInput">Enter Matrix:</label><br>
+        <textarea id="matrixInput" rows="5" cols="40" placeholder="Example: 1,2,3\n2,1,4\n3,4,1"></textarea><br><br>
+        
+        <!-- Button to check symmetry -->
+        <button onclick="checkSymmetry()">Check Symmetry</button>
+        
+        <!-- Display the result -->
+        <div id="result"></div>
+    </div>
+
+    <!-- JavaScript Code -->
+    <script>
+        // Function to check matrix symmetry
+        function checkSymmetry() {
+            // Get matrix input from the textarea
+            let matrixInput = document.getElementById("matrixInput").value.trim();
+            
+            // Split the input by line to get rows
+            let rows = matrixInput.split("\n");
+            
+            // Convert string rows to numeric matrix
+            let matrix = rows.map(row => row.split(",").map(Number));
+
+            // Check if matrix is square
+            let n = matrix.length;
+            for (let i = 0; i < n; i++) {
+                if (matrix[i].length !== n) {
+                    document.getElementById("result").innerHTML = "<span class='error'>Error: Matrix is not square!</span>";
+                    return;
+                }
+            }
+
+            // Check symmetry by comparing elements
+            let isSymmetric = true;
+            for (let i = 0; i < n; i++) {
+                for (let j = 0; j < n; j++) {
+                    if (matrix[i][j] !== matrix[j][i]) {
+                        isSymmetric = false;
+                        break;
+                    }
+                }
+            }
+
+            // Display result
+            if (isSymmetric) {
+                document.getElementById("result").innerHTML = "<span class='success'>✅ The matrix is symmetric.</span>";
+            } else {
+                document.getElementById("result").innerHTML = "<span class='error'>❌ The matrix is not symmetric.</span>";
+            }
+        }
+    </script>
+
+</body>
+</html>
