@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Linking External CSS -->
+    <link href="registration.css"  rel="stylesheet">
+
+     <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #FDF7F0;
+            margin: 0;
+            padding: 0;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        h2 {
+            text-align: center;
+            color: #9C3D3D;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        input{
+            background-color: yellow;
+        }
+        
+        
+    
+    </style>
+</head>
+<body>
+    <form>
+
+        <!-- Inline CSS applied to <h2> -->
+        <h2  style="color: #8a0707e3; text-align: center; font-family: 'Georgia', serif; font-size: 40px;"> Registration Form</h2>
+        
+        <label>Name</label>
+        <input type="text" placeholder="First Name">
+        <input type="text" placeholder="Last Name">
+        
+        <label>Date of Birth</label>
+        <input type="date">
+        
+        <label>Birth Place</label>
+        <input type="text" placeholder="Enter your birth place"><br><br>
+        
+        <label>Gender</label>
+        <select>
+            <option>Please Select</option>
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+        </select><br><br>
+        
+        <label>Phone Number</label>
+        <input type="number" >
+        
+        <label>Email</label>
+        <input type="email" >
+    
+        
+        <label>Achievements</label>
+        <textarea placeholder="Type here..."></textarea>
+        
+
+        <label>Upload Your Photos</label>
+        <input type="file">
+        
+        <label>Upload Your signature</label>
+        <input type="file">
+    
+        
+        <button class="sub">Submit</button>
+    </form>
+    
+        
+    
+</body>
+</html>

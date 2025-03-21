@@ -1,0 +1,43 @@
+/* External CSS */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #160505;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+textarea {
+    height: 80px;
+    resize: none;
+}
+
+label {
+    color: #04010b;
+    font-size: 14px;
+}
+.sub {
+    background-color: #1721d7; 
+    color: white; 
+    padding: 12px 20px; 
+    border: none; 
+    font-size: 16px; 
+    font-weight: bold;
+    border-radius: 5px; 
+    cursor: pointer; 
+    margin: 20px auto; 
+    text-align: center;
+    
+}
+
+.sub:hover {
+    background-color: #7A2C2C; /* Slightly Darker Red on Hover */
+    transform: scale(1.05); /* Slightly Increase Size on Hover */
+}
+
+.sub:active {
+    background-color: #5A1D1D; /* Even Darker Red When Clicked */
+    transform: scale(0.98); /* Slightly Shrink When Clicked */
+}
+

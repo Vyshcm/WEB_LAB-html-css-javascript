@@ -1,0 +1,15 @@
+/* External CSS *//* External CSS */
+
+/* Styling for paragraphs */
+p{
+    color: black;
+
+}
+
+/* Styling for button having id name content */
+.content{
+    color: blueviolet;
+    background-color: rgb(159, 190, 224);
+
+}
+

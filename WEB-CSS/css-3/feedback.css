@@ -1,0 +1,13 @@
+/* External CSS for additional styling */
+
+
+.feedback-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.feedback-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
