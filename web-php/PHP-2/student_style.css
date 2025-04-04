@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    
+        display: block !important;
+        margin: 8px !important;
+    
+    font-family: Arial, sans-serif;
+    background: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+}
+
+/* Sorting Container */
+.sorting-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Table Styling */
+.table-container {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    min-width: 250px;
+    border: 2px solid black; /* Ensures box has a border */
+}
+
+h3 {
+    color: #e74c3c;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Table Design */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are connected */
+    border: 2px solid black; /* Main border */
+}
+
+/* Header */
+th {
+    background: #3498db;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid black; /* Borders applied */
+}
+
+/* Cells */
+td {
+    padding: 8px;
+    text-align: center;
+    border: 2px solid black; /* Borders applied */
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background: #ecf0f1;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #218838;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
